@@ -53,6 +53,8 @@
 @cryptpad_color_grey_900: #212121;
 @cryptpad_color_grey_950: #121212;
 @cryptpad_color_black: #000;
+@cryptpad_color_muted: #262626;
+@cryptpad_color_border: #8080804d;
 
 @cryptpad_logo_grey: #939393;
 
@@ -139,8 +141,8 @@
 @cp_messenger-online: @cryptpad_color_light_green;
 
 // Alertify
-@cp_alertify-bg: @cryptpad_color_grey_800;
-@cp_alertify-fg: lighten(@cryptpad_color_brand, 30%);
+@cp_alertify-bg: @cryptpad_color_black;
+@cp_alertify-fg: @cryptpad_color_white;
 @cp_alertify-hover: fade(@cp_alertify-fg, 25%);
 @cp_alertify-overlay: fade(@cryptpad_color_grey_900, 50%);
 @cp_alertify-log-bg: fade(@cryptpad_color_brand_300, 90%);
@@ -209,7 +211,7 @@
 @cp_settings_disabled: @cryptpad_color_mid_red;
 
 // Drive
-@cp_drive-bg: @cp_sidebar-right-bg;
+@cp_drive-bg: @cryptpad_color_black;
 @cp_drive-fg: @cp_sidebar-right-fg;
 @cp_drive-header-fg: fade(@cryptpad_text_col, 70%);
 @cp_drive-icon-hover: fade(@cryptpad_text_col, 5%);
@@ -230,12 +232,12 @@
 @cp_header_bg : @cryptpad_color_black;
 
 // Contextmenu
-@cp_context-bg: @cryptpad_color_grey_800;
-@cp_context-border: @cryptpad_color_grey_600;
-@cp_context-bg-hover: @cryptpad_color_grey_700;
+@cp_context-bg: @cryptpad_color_black;
+@cp_context-border: @cryptpad_color_border ;
+@cp_context-bg-hover: @cryptpad_color_muted;
 @cp_context-bg-active: @cryptpad_color_grey_600;
-@cp_context-fg: @cryptpad_text_col;
-@cp_context-icon: @cryptpad_text_col;
+@cp_context-fg: @cryptpad_color_white;
+@cp_context-icon: @cryptpad_color_white;
 @cp_context-disabled: @cryptpad_color_grey_600;
 
 // Tooltip background
@@ -243,9 +245,9 @@
 @cp_tooltip-fg: @cryptpad_text_col;
 
 // Dropdown
-@cp_dropdown-fg: @cryptpad_text_col;
-@cp_dropdown-bg: @cryptpad_color_grey_800;
-@cp_dropdown-bg-hover: @cryptpad_color_grey_700;
+@cp_dropdown-fg: @cryptpad_color_white;
+@cp_dropdown-bg: @cryptpad_color_black;
+@cp_dropdown-bg-hover: @cryptpad_color_muted;
 @cp_dropdown-bg-active: @cryptpad_color_grey_600;
 
 // Rendered Markdown
@@ -280,9 +282,9 @@
 @cp_export-error-bg2: @cryptpad_color_red_fader;
 
 // File upload
-@cp_upload-fg: @cryptpad_color_brand_300;
-@cp_upload-header: @cryptpad_color_grey_700;
-@cp_upload-progress: @cryptpad_color_grey_700;
+@cp_upload-fg: @cryptpad_color_white;
+@cp_upload-header: @cryptpad_color_brand;
+@cp_upload-progress: @cryptpad_color_brand;
 
 // Help
 @cp_help-bg: @cryptpad_color_grey_800;
