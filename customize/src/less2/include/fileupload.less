@@ -35,7 +35,12 @@
         @media screen and (max-width: @browser_media-medium-screen) {
             left: 1vw; right: 1vw; bottom: 1vw;
         }
-
+        a {
+            color: @cp_upload-fg !important;
+        }
+        .cp-fileupload-table-progress-value{
+            color: @cp_upload-progress;
+        }
         .cp-fileupload-header {
             display: flex;
            
@@ -146,7 +151,8 @@
                 width: 0px;
                 height: 100%;
                 padding: 2px;
-                background-color: @cp_upload-progress;
+                background-color: color-mix(in srgb, @cp_upload-progress 15%, @cp_sidebar-left-bg);
+                
                 z-index: -1; //Z file upload progress container
             }
             .cp-fileupload-table-cancel {
